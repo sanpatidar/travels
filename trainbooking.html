@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Booking</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="trainbooking.css">
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <div id="logo">
+            <img src="12501-NOAIN2-transformed-removebg-preview.png" alt="MyRailYatra.com">
+            <div id="logoname">Yatra</div>
+        </div>
+        <ul>
+            <li class="item"><a href="rail new.html" target="_blank">Home</a></li>
+            <li class="item"><a href="trainbooking.html" target="_blank">Train</a></li>
+            <li class="item"><a href="enquiry.html" target="_blank">Train Enquiry</a></li>
+            <li class="item"><a href="#contact">Time Table</a></li>
+            <div class="dropdown">
+                <button class="dropbtn">Services</button>
+                <div class="dropdown-content">
+                    <a href="#">Meal</a>
+                    <a href="#">Railwire</a>
+                    <a href="#">Special Trains</a>
+                    <a href="#">Agent Login</a>
+                    <a href="#">Offers</a>
+                    <a href="#">Emergency</a>
+                    <a href="#"></a>
+                </div>
+            </div>
+        </ul>
+        <div class="button">
+            <button class="btn" onclick="openForm()">Login</button>
+            <button class="btn">Register</button>
+        </div>
+        <div class="form-popup" id="myForm">
+            <form action="/action_page.php" class="form-container">
+              <h1>Login</h1>
+          
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <button type="submit" class="btn">Login</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+          </div>
+    </nav>
+
+
+    <!--Booking Section-->
+    <main id="mainPage" class="main-content container">
+        <div class="booking-form">
+            <h3>Booking Train</h3>
+            <div class="input-group">
+                <label for="">Train From</label>
+                <input class="inp-style" type="text" name="" placeholder="New Delhi, India">
+            </div>
+            <div class="input-group">
+                <label for="">Train To</label>
+                <input class="inp-style" type="text" name="" placeholder="Ranchi, India">
+            </div>
+            <div class="inputs">
+                <div class="input-group">
+                    <label for="">Departure</label>
+                    <input class="inp-style" type="date" name="">
+                </div>
+            
+                <div class="option">
+                    <select name="class_type" id="class_type" required>
+                        <option value="All Classes" selected>All Classes</option>
+                        <option value="Second Sitting">Second Sitting</option>
+                        <option value="Sleeper">Sleeper</option>
+                        <option value="AC 3 Tier">AC 3 Tier</option>
+                        <option value="AC 2 Tier">AC 2 Tier</option>
+                        <option value="AC 1st Class">AC 1st Class</option>
+                    </select>
+                    <select name="class_type" id="class_type" required>
+                        <option value="Select Berth" selected>Select Berth</option>
+                        <option value="Lower Berth">Lower Berth</option>
+                        <option value="Middle Birth">Middle Birth</option>
+                        <option value="Upper Berth">Upper Berth</option>
+                        <option value="Side Berth">Side Berth</option>
+                    </select>
+
+                </div>
+            </div>
+            <div class="calculations">
+                <div class="amount">
+                    <div class="left">
+                        <p>Subtotal</p>
+                    </div>
+                    <div class="right">
+                        <p>Rs <span id="subtotal">0</span></p>
+                    </div>
+                </div>
+
+                <div class="amount">
+                    <div class="left">
+                        <p>Charge 10% GST</p>
+                    </div>
+                    <div class="left">
+                        <p>+</p>
+                    </div>
+                    <div class="left">
+                        <p>Convinience Fee: </p>
+                    </div>
+                    <div class="right">
+                        <p>Rs <span id="vat">0</span></p>
+                    </div>
+                </div>
+                <hr>
+                <div class="amount">
+                    <div class="left">
+                        <h4>Total</h4>
+                    </div>
+                    <div class="right">
+                        <p>Rs <span id="total">0</span></p>
+                    </div>
+                </div>
+            </div>
+            <button id="bookNowButton" class="btn-style" onclick="setTimeout(booking,4000)">Book Now</button>
+        </div>
+
+        <div class="booking-content">
+            <h1>TRAVEL WITH COMFORT </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias
+                veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise
+                voluptatibus quam</p>
+        </div>
+    </main>
+
+    <script src="trainbooking.js"></script>
+    </section>
+    </main>
+    <footer class="footer">
+        <div class="last-container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4><span>YATRA</span>.com</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms of use</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                        <li><a href="#">sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">Our services</a></li>
+                        <li><a href="#">payment options</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="#">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Careers</h4>
+                    <ul>
+                        <li><a href="#">Technical</a></li>
+                        <li><a href="#">Govt. Insights</a></li>
+                        <li><a href="#">Platform Services</a></li>
+                        <li><a href="#">More Vacancies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+</body>
+
+</html>
