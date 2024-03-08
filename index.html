@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yatra | Make your dream come true with us</title>
+    <link rel="stylesheet" href="rail new.css">
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="12501-NOAIN2-transformed-removebg-preview.png" alt="MyRailYatra.com">
+            <div id="logoname">Yatra</div>
+        </div>
+        <ul>
+            <li class="item"><a href="rail new.html">Home</a></li>
+            <li class="item"><a href="trainbooking.html" target="_blank">Train</a></li>
+            <li class="item"><a href="flightbooking.html">Flight</a></li>
+            <li class="item"><a href="#contact">Bus</a></li>
+            <li class="item"><a href="hotel.html">Hotels</a></li>
+            <li class="item"><a href="#cabs">Cabs</a></li>
+            
+            <div class="dropdown">
+                <button class="dropbtn">More</button>
+                <div class="dropdown-content">
+                    <a href="#">Charters</a>
+                    <a href="#">Cruise</a>
+                    <a href="#">Gift Card</a>
+                    <a href="#">Offers</a>
+                    <a href="#">Agent Login</a>
+                </div>
+            </div>
+        </ul>
+        <div class="button">
+            <button class="btn">Login</button>
+            <button class="btn">Register</button>
+        </div>
+    </nav>
+    <div class="container">
+        
+        <div class="slide-container active">
+            
+                <div class="slide">
+                    <div class="content">
+                        <h3>Welcome to Yatra Travels: Where Every Journey is an Adventure</h3>
+                        <p>
+                            Namaste! 🌐🌍
+                            <br>
+                            At Yatra Travels and Tourism, we believe that every journey is an adventure waiting to unfold. Whether you're
+                            exploring new destinations or revisiting your favorite spots, we're here to make your travel
+                            experience extraordinary.
+                        </p>
+                        <a href="#" class="btn">Know More</a>
+                    </div>
+                    <video src="y2mate.bz - Welcome to India ! [CINEMATIC TRAVEL FILM].mp4" muted autoplay
+                    loop></video>
+
+                </div>
+            </div>
+            
+            <div class="slide-container">
+                <div class="slide">
+                    <div class="content">
+                        <h3>Welcome to Yatra Flights : Fly With Us</h3>
+                        <p>
+                            Namaste! ✈️🌍
+                            <br>
+                            Embark on a journey of comfort and convenience with YatraAir, your premier destination for
+                            seamless flight reservations. Whether you're a frequent flyer or planning your dream vacation,
+                            we're here to make your flight booking experience delightful.
+                            
+                        </p>
+                        <a href="#" class="btn">Know More</a>
+                    </div>
+                    
+                    <video src="landing_-_32945 (Original).mp4" muted loop autoplay></video>
+                </div>
+            </div>
+            
+            <div class="slide-container">
+                <div class="slide">
+                    <div class="content">
+                        <h3>Welcome to Yatra Rails: Your Journey Begins Here</h3>
+                        <p>
+                            Namaste! 🚂🌍
+                            <br>
+                            Embark on a seamless and delightful journey with YatraRail, your gateway to hassle-free railway
+                            reservations. We understand the importance of your travels and strive to make your railway
+                            booking experience swift, secure, and enjoyable.
+                        </p>
+                        <a href="#" class="btn">Know More</a>
+                    </div>
+    
+                   <video
+                        src="X2Download.app-Namo Bharat, Represents Indias Futuristic & Resilient Rail Infrastructure_ PM Modi-(1080p)-2.mp4"
+                        muted autoplay loop></video>
+                </div>
+            </div>
+
+
+        <div class="slide-container">
+            <div class="slide">
+                <div class="content">
+                    <h3>Welcome to Yatra Wheels: Your Path to Effortless Commutes</h3>
+                    <p>
+
+                        Namaste! 🚗🚌
+                        <br>
+                        YatraWheels is your trusted partner for seamless cab and bus bookings, making your daily
+                        commutes or inter-city travels a breeze. Whether you're heading to work or planning a weekend
+                        getaway, we're here to ensure your journey is comfortable and stress-free.
+
+                    </p>
+                    <a href="#" class="btn" >Know More</a>
+                </div>
+
+                <video src="168811 (1440p).mp4" muted autoplay loop></video>
+            </div>
+        </div>
+        <div id="next" onclick="next()"> > </div>
+        <div id="prev" onclick="prev()"> < </div>
+        </div>
+        <!-- Javascript -->
+        <script>
+            let slides = document.querySelectorAll('.slide-container')
+            let index = 0;
+
+            function next() {
+                slides[index].classList.remove('active');
+                index = (index + 1) % slides.length;
+                slides[index].classList.add('active');
+
+            }
+
+            function prev() {
+                slides[index].classList.remove('active');
+                index = (index - 1 + slides.length) % slides.length;
+                slides[index].classList.add('active');
+            }
+
+        </script>
+
+        <div class="shortcut">
+            <h2 class="heading">Have you not found the right one?</h2>
+            <h2>Find a service suitable for you here.</H2>
+            <div class="service">
+                <div class="services">
+                    <li><a href="flightbooking.html"><img src="flight_FILL0_wght400_GRAD0_opsz24.png" alt=""></a></li>
+                    <div class="logoname">Flight</div>
+                </div>
+                <div class="services">
+                    <li><a href=""><img src="trending_up_FILL0_wght400_GRAD0_opsz24.png" alt=""></a></li>
+                    <div class="logoname">Trends</div>
+                </div>
+                <div class="services">
+                    <li><a href=""><img src="hotel_FILL0_wght400_GRAD0_opsz24.png" alt=""></a></li>
+                    <div class="logoname">Hotel</div>
+                </div>
+                <div class="services">
+                    <li><a href=""><img src="restaurant_FILL0_wght400_GRAD0_opsz24.png" alt=""></a></li>
+                    <div class="logoname">Food</div>
+                </div>
+                <div class="services">
+                    <li><a href=""><img src="travel_explore_FILL0_wght400_GRAD0_opsz24.png" alt=""></a></li>
+                    <div class="logoname">Explore</div>
+                </div>
+                <div class="services">
+                    <li><a href=""><img src="train_FILL0_wght400_GRAD0_opsz24.png" alt=""></a></li>
+                    <div class="logoname">TOURIST<BR>TRAINS</div>
+                </div>
+                <div class="services">
+                    <li><a href=""><img src="landscape_FILL0_wght400_GRAD0_opsz24.png" alt=""></a></li>
+                    <div class="logoname">HILL<BR>TRAINS</div>
+                </div>
+                <div class="services">
+                    <li><a href=""><img src="health_and_safety_FILL0_wght400_GRAD0_opsz24.png" alt=""></a></li>
+                    <div class="logoname">HEALTH</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="whole-card">
+        <div class="heading2">
+            Plan Your Holiday
+        </div>
+        <div class="mycard1">
+            <div class="card-img">
+                <img src="Houseboat on Dal Lake.jpg.avif" alt="travel place">
+            </div>
+            <div class="card-content">
+                <h3>Kashmir 5N</h3>
+
+                <p>"Kashmir: Beauty meets tranquility, a timeless embrace of nature's grace."</p>
+                <p><button class="btn-book" onclick="prompt('Booking For Ladakh: Enter Your Budget')">Book Now
+                        <span>></span></button></p>
+            </div>
+        </div>
+
+        <div class="mycard2">
+            <div class="card-img">
+                <img src="ZF.jpg.avif" alt="travel place">
+            </div>
+            <div class="card-content">
+                <h3>Goa 5N</h3>
+
+                <p>"Goa: The sun, sand, and smiles create a symphony of joy and happiness."</p>
+                <p><button class="btn-book" onclick="prompt('Booking For Ladakh: Enter Your Budget')">Book Now
+                        <span>></span></button></p>
+            </div>
+        </div>
+
+        <div class="mycard2">
+            <div class="card-img">
+                <img src="Munnar.avif" alt="travel place">
+            </div>
+            <div class="card-content">
+                <h3>Munnar 5N</h3>
+
+                <p>"Munnar: Hills whisper tales, and tea gardens weave dreams."</p>
+                <p><button class="btn-book" onclick="prompt('Booking For Ladakh: Enter Your Budget')">Book Now
+                        <span>></span></button></p>
+            </div>
+        </div>
+
+        <div class="mycard2">
+            <div class="card-img">
+                <img src="Zanskar.jpg.avif" alt="travel place">
+            </div>
+            <div class="card-content">
+                <h3>Ladakh 5N</h3>
+
+                <p>"Ladakh: Mountains converse with the sky, and serenity echoes in every breath."</p>
+                <p><button class="btn-book" onclick="prompt('Booking For Ladakh: Enter Your Budget')">Book Now
+                        <span>></span></button></p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4><span>YATRA</span>.com</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms of use</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                        <li><a href="#">sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">Our services</a></li>
+                        <li><a href="#">payment options</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="#">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Careers</h4>
+                    <ul>
+                        <li><a href="#">Technical</a></li>
+                        <li><a href="#">Govt. Insights</a></li>
+                        <li><a href="#">Platform Services</a></li>
+                        <li><a href="#">More Vacancies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
