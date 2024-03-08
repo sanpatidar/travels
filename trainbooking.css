@@ -1,0 +1,479 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background: url("trainbg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* background-attachment: fixed; */
+  background-size: 100% 900px;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  /* position: sticky; */
+  /* justify-content: right; */
+  top: 0px;
+  background-color: white;
+}
+#logo img {
+  height: 64px;
+  margin: 3px 6px;
+  padding-right: 60px;
+}
+#logoname {
+  margin-top: 19px;
+  flex: auto;
+  float: left;
+  font-size: 1.6rem;
+}
+#logo {
+  margin: 10px 34px;
+}
+#navbar ul {
+  display: flex;
+  align-items: center;
+  font-family: "Baloo Bhai";
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+#navbar ul li a {
+  color: rgb(12, 12, 12);
+  display: block;
+  padding: 1px 18px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-family: "Baloo Bhai";
+  font-size: 16px;
+  margin-left: 12px;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change link color when hovering */
+.dropdown-content a:hover {
+  background-color: #d2e38a;
+}
+
+/* Show the dropdown content when hovering over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+button {
+  background: linear-gradient(135deg, #3498db, #7fb0d1);
+  color: #fff;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #7fb0d1, #3498db);
+  cursor: pointer;
+}
+
+.button {
+  position: absolute;
+  right: 34px;
+  top: 29px;
+  display: inline-block;
+}
+
+.btn {
+  margin: 0px 5px;
+  padding: 4px 14px;
+  border-radius: 9px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.form-popup {
+  display: none;
+  position:fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+#navbar ul li a:hover {
+  color: #3498db;
+  text-decoration: wavy;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 70px;
+  align-items: center;
+}
+.booking-form {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 25px;
+  border-radius: 5px;
+  float: left;
+  margin-top: 70px;
+  margin-left: 20px;
+  border-radius: 30px;
+}
+.booking-form h3 {
+  margin: 10px 0px;
+}
+.booking-form .input-group {
+  margin: 10px 0;
+}
+.f-class {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.inp-width {
+  min-width: 300px;
+}
+.plus-minus-btn {
+  margin-top: 19px;
+  word-spacing: 10px;
+}
+.plus-minus-btn > button {
+  color: #3352f2;
+  font-size: 30px;
+  padding: 2px;
+  border: 0;
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: #f3f5ff;
+}
+.plus-minus-btn > button:hover {
+  border: #3352f2 1px solid;
+}
+.booking-form .calculations {
+  margin: 10px 0;
+}
+.booking-form .calculations p {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.booking-form input {
+  width: 100%;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background: #f3f5ff;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+.booking-form .inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.booking-content {
+  color: #fff;
+  width: 80%;
+}
+.booking-content h1 {
+  font-size: 70px;
+  text-transform: uppercase;
+  font-family: "Bebas Neue", cursive;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.btn-style {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  background-color: #3352f2;
+}
+.amount {
+  display: flex;
+  justify-content: space-between;
+}
+.container-2 {
+  width: 520px;
+  border-radius: 10px;
+  height: 460px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 25px;
+  border-radius: 5px;
+  box-sizing: border-box;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.container-2-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.text-right {
+  text-align: right;
+  font-weight: 500;
+  margin: 5px;
+}
+.text-left {
+  text-align: left;
+}
+.margin-bottom {
+  margin-bottom: 20px;
+}
+.container-2 hr {
+  border-top: 2px dashed #a2a9c3;
+}
+#confirmation-page {
+  display: none;
+}
+#booking-confirmed {
+  width: 320px;
+  border-radius: 10px;
+  height: 50px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 10px;
+  display: none;
+}
+#booking-confirmed p {
+  font-weight: 500;
+}
+.center-flex-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.margin-bottom-40 {
+  border: 1px solid gray;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+.margin-left-20 {
+  margin-left: 20px;
+}
+.departure-arrival-text {
+  font-size: 20px;
+  color: grey;
+}
+.flying-time {
+  font-size: 28px;
+  color: black;
+  font-weight: 450;
+}
+select {
+  width: 42%;
+  padding: 12px 12px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  margin-left: 15px;
+  font-family: "Public Sans", sans-serif;
+  background-color: aliceblue;
+  height: 30px;
+}
+.shortcut {
+  width: 100%;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+body {
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.last-container {
+  max-width: 1170px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+ul {
+  list-style: none;
+}
+.footer {
+  background: linear-gradient(to right, #2b3f42, #355973);
+  padding: 70px 0;
+  margin-top: 75px;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background: orange;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
