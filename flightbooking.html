@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="flightbooking.css">
+</head>
+
+<body>
+    <!--Header and Menu Section-->
+    <!-- <header class="container">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a class="active" href="#">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header> -->
+
+    <nav id="navbar">
+        <div id="logo">
+            <img src="12501-NOAIN2-transformed-removebg-preview.png" alt="MyRailYatra.com">
+            <div id="logoname">Yatra</div>
+        </div>
+        <ul>
+            <li class="item"><a href="rail new.html">Home</a></li>
+            <li class="item"><a href="trainbooking.html" target="_blank">Train</a></li>
+            <li class="item"><a href="flightbooking.html">Flight</a></li>
+            <li class="item"><a href="#contact">Bus</a></li>
+            <li class="item"><a href="#holiday">Holiday</a></li>
+            <li class="item"><a href="#cabs">Cabs</a></li>
+            <li class="item"><a href="#activities">Activities</a></li>
+            <div class="dropdown">
+                <button class="dropbtn">More</button>
+                <div class="dropdown-content">
+                    <a href="#">Charters</a>
+                    <a href="#">Cruise</a>
+                    <a href="#">Gift Card</a>
+                    <a href="#">Offers</a>
+                    <a href="#">Agent Login</a>
+                </div>
+            </div>
+        </ul>
+        <div class="button">
+            <button class="btn">Login</button>
+            <button class="btn">Register</button>
+        </div>
+    </nav>
+
+    <!--Booking Section-->
+    <main id="mainPage" class="main-content container">
+        <div class="booking-form">
+            <h3>Booking Flights</h3>
+            <div class="input-group">
+                <label for="">Flying From</label>
+                <input class="inp-style" type="text" name="" placeholder="New Delhi, India">
+            </div>
+            <div class="input-group">
+                <label for="">Flying To</label>
+                <input class="inp-style" type="text" name="" placeholder="Ranchi, India">
+            </div>
+            <div class="inputs">
+                <div class="input-group">
+                    <label for="">Departure</label>
+                    <input class="inp-style" type="date" name="">
+                </div>
+                <div class="input-group">
+                    <label for="">Return</label>
+                    <input class="inp-style" type="date" name="">
+                </div>
+            </div>
+            <div class="input-group f-class">
+                <div>
+                    <label for="">First Class (Rs 8500)</label>
+                    <input id="firstClassInput" class="inp-style inp-width" type="number" name="" value="0">
+                </div>
+                <div class="plus-minus-btn">
+                    <button id="firstClassPlus">+</button>
+                    <button id="firstClassMinus">-</button>
+                </div>
+            </div>
+
+            <div class="input-group f-class">
+                <div>
+                    <label for="">Economy (Rs 4000)</label>
+                    <input id="economyClassInput" class="inp-style inp-width" type="number" name="" value="0">
+                </div>
+                <div class="plus-minus-btn">
+                    <button id="economyClassPlus">+</button>
+                    <button id="economyClassMinus">-</button>
+                </div>
+            </div>
+            <div class="calculations">
+                <div class="amount">
+                    <div class="left">
+                        <p>Subtotal</p>
+                    </div>
+                    <div class="right">
+                        <p>Rs <span id="subtotal">0</span></p>
+                    </div>
+                </div>
+
+                <div class="amount">
+                    <div class="left">
+                        <p>Charge 10% VAT</p>
+                    </div>
+                    <div class="right">
+                        <p>Rs <span id="vat">0</span></p>
+                    </div>
+                </div>
+                <hr>
+                <div class="amount">
+                    <div class="left">
+                        <h4>Total</h4>
+                    </div>
+                    <div class="right">
+                        <p>Rs <span id="total">0</span></p>
+                    </div>
+                </div>
+            </div>
+            <button id="bookNowButton" class="btn-style">Book Now</button>
+        </div>
+
+        <div class="booking-content">
+            <h1>Fly <br> around the world</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicingelit. Provident voluptatibus quam fuga laborumalias
+                veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt nobise
+                voluptatibus quam</p>
+        </div>
+    </main>
+
+    <!--Confirmation Section-->
+    <main id="confirmation-page">
+        <section class="container-2">
+            <div>
+
+            </div>
+            <div class="container-2-grid">
+                <div class="center-flex-items margin-bottom-40">
+                    <img src="images/departure.png" alt="">
+                    <p class="margin-left-20 departure-arrival-text">Departure<br><span class="flying-time">10:40</span>
+                    </p>
+                </div>
+                <div class="center-flex-items margin-bottom-40">
+                    <img src="images/arrival.png" alt="">
+                    <p class="margin-left-20 departure-arrival-text">Arrival<br><span class="flying-time">22:30</span>
+                    </p>
+                </div>
+
+                <p class="text-left">First Class Passenger</p>
+                <p class="text-right">x <span id="firstClassPassenger">0</span></p>
+                <p class="text-left">Economy Passenger</p>
+                <p class="text-right margin-bottom">x <span id="economyClassPassenger">0</span></p>
+                <p class="text-left">Subtotal</p>
+                <p class="text-right">$ <span id="confirmSubtotal">0</span></p>
+                <p class="text-left">Discount</p>
+                <p class="text-right">$ 0</p>
+                <p class="text-left">Charge 10% VAT</p>
+                <p class="text-right margin-bottom">$ <span id="confirmVat">0</span></p>
+                <hr class="horizontal-line">
+                <hr>
+                <h4 class="text-left">Total</h4>
+                <p class="text-right margin-bottom">$ <span id="confirmTotal">0</span></p>
+            </div>
+            <button id="confirmBook" class="btn-style">Confirm Booking</button>
+        </section>
+    </main>
+
+    <!--Booking Confirmed-->
+    <main>
+        <section id="booking-confirmed">
+            <img src="images/check.png" alt="">
+            <p>Your booking has been confirmed.</p>
+        </section>
+    </main>
+
+
+</body>
+
+</html>
